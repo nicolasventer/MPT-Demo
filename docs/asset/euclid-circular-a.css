@@ -1,0 +1,60 @@
+@font-face {
+	font-family: euclid circular a;
+	font-style: normal;
+	font-weight: 400;
+	src: local("Euclid Circular A"), url("./fonts/euclid-circular-a/Euclid Circular A Regular.ttf");
+}
+@font-face {
+	font-family: euclid circular a;
+	font-style: italic;
+	font-weight: 400;
+	src: local("Euclid Circular A"), url("./fonts/euclid-circular-a/Euclid Circular A Italic.ttf");
+}
+@font-face {
+	font-family: euclid circular a;
+	font-style: normal;
+	font-weight: 300;
+	src: local("Euclid Circular A"), url("./fonts/euclid-circular-a/Euclid Circular A Light.ttf");
+}
+@font-face {
+	font-family: euclid circular a;
+	font-style: italic;
+	font-weight: 300;
+	src: local("Euclid Circular A"), url("./fonts/euclid-circular-a/Euclid Circular A Light Italic.ttf");
+}
+@font-face {
+	font-family: euclid circular a;
+	font-style: normal;
+	font-weight: 500;
+	src: local("Euclid Circular A"), url("./fonts/euclid-circular-a/Euclid Circular A Medium.ttf");
+}
+@font-face {
+	font-family: euclid circular a;
+	font-style: italic;
+	font-weight: 500;
+	src: local("Euclid Circular A"), url("./fonts/euclid-circular-a/Euclid Circular A Medium Italic.ttf");
+}
+@font-face {
+	font-family: euclid circular a;
+	font-style: normal;
+	font-weight: 600;
+	src: local("Euclid Circular A"), url("./fonts/euclid-circular-a/Euclid Circular A SemiBold.ttf");
+}
+@font-face {
+	font-family: euclid circular a;
+	font-style: italic;
+	font-weight: 600;
+	src: local("Euclid Circular A"), url("./fonts/euclid-circular-a/Euclid Circular A SemiBold Italic.ttf");
+}
+@font-face {
+	font-family: euclid circular a;
+	font-style: normal;
+	font-weight: 700;
+	src: local("Euclid Circular A"), url("./fonts/euclid-circular-a/Euclid Circular A Bold.ttf");
+}
+@font-face {
+	font-family: euclid circular a;
+	font-style: italic;
+	font-weight: 700;
+	src: local("Euclid Circular A"), url("./fonts/euclid-circular-a/Euclid Circular A Bold Italic.ttf");
+}

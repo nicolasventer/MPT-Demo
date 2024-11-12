@@ -1,0 +1,253 @@
+/* ========= Scope Global ========= */
+
+::view-transition-old(root),
+::view-transition-new(root) {
+	animation-duration: 1s;
+}
+
+/* hide edge eye in password */
+input::-ms-reveal,
+input::-ms-clear {
+	display: none;
+}
+
+html,
+body * {
+	font-family: "Euclid Circular A", sans-serif !important;
+}
+
+::-webkit-scrollbar {
+	width: 8px;
+	height: 8px;
+	background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+	border-radius: 7px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+	background-color: #656565;
+}
+
+::-webkit-scrollbar-track {
+	-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+	border-radius: 7px;
+	background-color: transparent;
+}
+
+/* ========= Scope User ========= */
+
+.hdisplay {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.vdisplay {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.form-hdisplay {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: flex-start;
+	width: 100%;
+	gap: 15px;
+}
+
+/* ====== Scope Mission Holder ====== */
+
+.cancelled-row {
+	background-color: #ffb7be !important;
+}
+
+/* === Row styles === */
+
+.table-body > tr > td {
+	background-color: #fff;
+}
+
+/* row hover */
+.table-body > tr:hover > td {
+	background-color: #dddddd;
+}
+
+/* odd row not hovered */
+.table-body > tr:nth-of-type(odd):not(:hover) > td {
+	background-color: #f5f5f5;
+}
+
+/* dark mode row hover */
+/* dark mode odd row not hovered */
+.edited-row:not(:hover) > td {
+	background-color: #e8f1ff !important;
+}
+
+/* === Cell styles === */
+
+.edited-cell {
+	background-color: #f7fda3 !important;
+}
+
+.requested-changes-cell {
+	background-color: #fdc598 !important;
+}
+
+/* === Form styles === */
+
+.edited-field,
+.edited-parent > div > div {
+	background-color: #e1edff !important;
+}
+
+.autocomplete-group {
+	background-color: #d5d5d5;
+}
+
+.autocomplete-listbox {
+	background-color: #f9f9f9;
+}
+
+/* === Render styles === */
+
+.tag {
+	margin: auto;
+	border: none;
+	padding: 3px 8px;
+	border-radius: 5px;
+	cursor: pointer;
+	box-shadow: 1px 1px 3px #888888;
+	transition: all 0.1s ease-in-out;
+	user-select: none;
+	color: black;
+}
+
+.tag:disabled {
+	opacity: 0.5;
+	cursor: not-allowed;
+}
+
+.tag:hover:not(:disabled) {
+	box-shadow: 2px 2px 5px #888888;
+}
+
+.tag:active:not(:disabled) {
+	box-shadow: 4px 4px 10px #888888;
+	transition: all 0.05s ease-in-out;
+}
+
+.service {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	min-width: 45px;
+	border-radius: 0px;
+}
+
+.status-pending,
+.hoverable-status-pending:not(:hover) {
+	background-color: #ffb889 !important;
+}
+
+.status-driver-ok,
+.hoverable-status-driver-ok:not(:hover) {
+	background-color: #fffd8c !important;
+}
+
+.status-in-position,
+.hoverable-status-in-position:not(:hover) {
+	background-color: #e4ebfc !important;
+}
+
+.status-pob,
+.hoverable-status-pob:not(:hover) {
+	background-color: #a3ffa6 !important;
+}
+
+.status-finished,
+.hoverable-status-finished:not(:hover) {
+	background-color: #c3c3c3 !important;
+}
+
+:has(> * > .parent-no-margin),
+:has(> .parent-no-margin) {
+	padding: 0px !important;
+}
+
+/* === Render colors === */
+
+.start-time {
+	color: #007f00;
+}
+
+.end-time {
+	color: #cc0000;
+}
+
+.start-time-bright {
+	color: #00ff00;
+}
+
+.end-time-bright {
+	color: #ff0000;
+}
+
+.mission-status-new {
+	background-color: lightgreen;
+}
+
+.mission-status-validated {
+	background-color: rgb(101, 205, 240);
+}
+
+.mission-status-changes-requested {
+	background-color: orange;
+}
+
+.mission-status-cancelled {
+	background-color: rgb(250, 91, 62);
+}
+
+.mission-status-edited {
+	background-color: rgb(247, 247, 108);
+}
+
+.route-highlight {
+	background-color: #00ddff;
+}
+
+/* === Special styles === */
+
+.with-children-border-top > * {
+	border-top: 1px solid #e0e0e0;
+}
+
+.MyRouteAccordion > * > * {
+	margin: 2px 0px 0px 0px !important;
+}
+
+.dialog {
+	padding: 15px;
+}
+
+/* Google map opacity on InfoWindow */
+div:has(> div > .infoWindowContent) {
+	opacity: 0.8;
+}
+
+div:has(> div > .infoWindowContent) > div > button {
+	display: flex !important;
+	justify-content: end !important;
+	position: absolute !important;
+	width: 100% !important;
+	padding-right: 10px !important;
+	z-index: 5 !important;
+}
+
+.infoWindowContent {
+	margin-right: 25px;
+}
